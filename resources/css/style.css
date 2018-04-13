@@ -1,0 +1,70 @@
+body {
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  font-family: Roboto;
+  color: #081747;
+  /*color: #3a3532;*/
+}
+
+#content {
+  margin: 20px 60px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  font-family: 'Roboto Slab';
+}
+
+header .logo .textcontainer {
+  display: flex;
+  flex-direction: column;
+
+}
+
+header .logo .name {
+  font-size: 34px;
+}
+
+header nav {
+  display: flex;
+}
+
+.navigation {
+  width: 85px;
+  text-align: center;
+}
+
+header nav .redlight {
+  height: 4px;
+
+  margin-top: 20px;
+}
+
+header nav .home .redlight {
+  background-color: #f74f4f;
+  /*background-color: #af9f97;*/
+}
+
+header nav .projects:active > .redlight {
+  background-color: #f74f4f;
+}
+
+
+
+.aboutme {
+  margin: 120px 100px 0 100px;
+  /*color: #f4f2ef;*/
+}
+
+.aboutme h1 {
+  font-family: 'Roboto Slab';
+}
+
+.aboutme p {
+  font-size: 25px;
+}
