@@ -1,23 +1,32 @@
 body {
   background-image: url(../images/background.jpg);
+  background-attachment: fixed;
   background-size: cover;
   font-family: Roboto;
-  color: #081747;
-  /*color: #3a3532;*/
+  color: `#081747;
 }
 
 #content {
-  margin: 20px 60px;
+  margin: 20px 20px;
 }
+
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  height: 100px;
+  width: 96.1%;
+  background-image: url(../images/header.jpg);
+  z-index: 2;
+  border-bottom: #081747 solid 4px;
+  padding-bottom: 30px;
 }
 
 header .logo {
   display: flex;
   font-family: 'Roboto Slab';
+  width: 50%;
 }
 
 header .logo .textcontainer {
@@ -32,6 +41,9 @@ header .logo .name {
 
 header nav {
   display: flex;
+  width: 50%;
+  justify-content: flex-end;
+
 }
 
 .navigation {
@@ -54,17 +66,144 @@ header nav .projects:active > .redlight {
   background-color: #f74f4f;
 }
 
-
-
-.aboutme {
-  margin: 120px 100px 0 100px;
-  /*color: #f4f2ef;*/
+.maincontent {
+  position: relative;
+  top: 100px;
 }
 
-.aboutme h1 {
+#aboutme {
+  margin: 0 100px;
+  padding-top: 200px;
+
+}
+
+#aboutme h1 {
   font-family: 'Roboto Slab';
 }
 
-.aboutme p {
+#aboutme p {
   font-size: 25px;
 }
+
+#projectspage {
+  display: none;
+  padding-top: 60px;
+}
+
+#projectspage .imagecontainer {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+#projectspage .element {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(8, 8, 8, 0.1);
+}
+
+#projectspage img {
+  max-width: 100%;
+  background-color: white;
+  border: 2px solid #081747;
+}
+
+#projectspage .textcontainer {
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 20px;
+  max-width: 70%;
+}
+
+#projectspage h2 {
+  font-family: 'Roboto Slab';
+  margin: 0 0 10px 0;
+}
+
+#projectspage .button {
+  display: flex;
+  justify-content: center;
+  background-color: #081747;
+  color: white;
+  width: 150px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+#projectspage .buttons {
+  display: flex;
+}
+
+#projectspage a {
+  text-decoration: none;
+}
+
+#projectspage .button .github {
+  padding-right: 8px;
+}
+
+#contactpage {
+  display: none;
+  padding-top: 60px;
+  justify-content: center;
+}
+
+#contactpage h1 {
+  font-family: 'Roboto Slab';
+  color: #081747;
+}
+
+#contactpage form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+
+  padding: 30px;
+  border-radius: 5px;
+}
+
+#contactpage .contactdetails {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+#contactpage .inputForm {
+  border-radius: 5px;
+}
+
+#contactpage .message textarea {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  align-content: start;
+  border-radius: 5px;
+}
+
+#contactpage form .submit {
+  display: flex;
+  width; 100%;
+  padding-top: 20px;
+  justify-content: flex-end;
+}
+
+#contactpage .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(8, 8, 8, 0.1);
+}
+
+#contactpage .contacticons {
+  display: flex;
+  padding: 20px 0;
+}
+
+#contactpage i {
+  padding: 0 20px;
+  color: #081747;
+  }

@@ -3,16 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Chris Hardy: Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="./resources/javascript/main.js"></script>
   </head>
+
   <body>
+
     <div id="content">
+
+      <!-- header content -->
+
       <header>
 
         <div class="logo">
@@ -49,11 +54,165 @@
 
       </header>
 
-      <div class="aboutme">
-        <h1>Professional Web Development</h1>
-        <p>I am a web developer from Halifax, West Yorkshire with a passion for making beautiful web-sites functional.
-        If you are a business looking for an improved web presence or an employer looking to hire, please get in touch.</p>
+      <div class="maincontent">
+
+        <!-- Home page content -->
+
+        <div id="aboutme">
+          <h1>Professional Web Development</h1>
+          <p>I am a web developer from Halifax, West Yorkshire with a passion for making beautiful web-sites functional.
+            If you are a business looking for an improved web presence or an employer looking to hire, please get in touch.</p>
+        </div>
+
+        <div id="projectspage">
+
+          <div class="element jammming">
+
+            <div class="imagecontainer">
+              <img src="./resources/images/jammming.png"/>
+            </div>
+
+            <div class="textcontainer">
+
+              <h2>Jammming</h2>
+              <p>A front end app allowing the user to create
+              palylists and export them to Spotify. Built using React.js</p>
+
+              <div class="buttons">
+
+                <a href="http://chrishardy80.surge.sh" target="_blank">
+                  <div class="button">
+                    <span>View project</span>
+                  </div>
+                </a>
+
+                <a href="https://github.com/chrishardy80/jammming" target="_blank">
+                  <div class="button">
+                    <span class="github">View on Github</span>
+                    <div class="icon">
+                      <i class="fa fa-github"></i>
+                    </div>
+                  </div>
+                </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="element ravenous">
+
+          <div class="imagecontainer">
+            <img src="./resources/images/ravenous.png"/>
+          </div>
+
+          <div class="textcontainer">
+
+            <h2>Ravenous</h2>
+            <p>A search engine that accesses the Yelp API, built using React.js</p>
+
+            <div class="buttons">
+
+              <a href="http://purple-dalmatian.surge.sh" target="_blank">
+                <div class="button">
+                  <span>View project</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/chrishardy80/ravenous1" target="_blank">
+                <div class="button">
+                  <span class="github">View on Github</span>
+                  <div class="icon">
+                    <i class="fa fa-github"></i>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="element sudoku">
+
+          <div class="imagecontainer">
+            <img src="./resources/images/sudoku.png"/>
+          </div>
+
+          <div class="textcontainer">
+            <h2>Sudoku</h2>
+            <p>A sudoku puzzle generator that creates a new, random, complete puzzle board each time it is run. Created with javascript.</p>
+
+            <a href="https://github.com/chrishardy80/sudoku" target="_blank">
+              <div class="button">
+                <span class="github">View on Github</span>
+                <div class="icon">
+                  <i class="fa fa-github"></i>
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="element minesweeper">
+
+          <div class="imagecontainer">
+            <img src="./resources/images/minesweeper.png"/>
+          </div>
+
+          <div class="textcontainer">
+            <h2>Minesweeper</h2>
+            <p>A version of the Minesweeper game playable in the terminal.
+               Created with Javascript.</p>
+
+            <a href="https://github.com/chrishardy80/minesweeper" target="_blank">
+              <div class="button">
+                <span class="github">View on Github</span>
+                <div class="icon">
+                  <i class="fa fa-github"></i>
+                </div>
+              </div>
+            </a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div id="contactpage">
+          <div class="container">
+              <h1>Get in touch</h1>
+              <form action="https://formspree.io/chris.j.hardy@talk21.com"
+                    method="POST">
+                  <div class="contactdetails">
+                    <input type="text" name="name" placeholder="name" class="inputForm">
+                    <input type="email" name="_replyto" placeholder="email" class="inputForm">
+                    <input type="number" name="phone" placeholder="phone" class="inputForm">
+                  </div>
+                  <div class="message">
+                    <textarea type="text" name="message" placeholder="message">
+                    </textarea>
+                  </div>
+                  <div class="submit">
+                    <input type="submit" value="Send">
+                  </div>
+              </form>
+              <div class="contacticons">
+                <i class="fa fa-linkedin fa-lg"></i>
+                <i class="fa fa-github fa-lg"></i>
+                <i class="fa fa-envelope-square fa-lg"></i>
+              </div>
+          </div>
+        </div>
+        </div>
       </div>
-    </div>
+
+
+
   </body>
+
 </html>
