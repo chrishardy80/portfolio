@@ -1,5 +1,8 @@
 function main() {
 
+  $('#contactpage').hide();
+  $('#projectspage').hide();
+
   $('.projects').on('click',
     function() {
 	     $('.home .redlight').css("background-color","inherit");
@@ -8,7 +11,7 @@ function main() {
        $('#aboutme').hide();
        $('#projectspage').show();
        $('#contactpage').hide();
-       $('body').css("background-image", "url(./resources/images/background3.jpg)");
+       $('body').css("background-image", "url(./resources/images/header.jpg)");
   });
 
   $('.contact').on('click',
@@ -19,7 +22,7 @@ function main() {
       $('#aboutme').hide();
       $('#projectspage').hide();
       $('#contactpage').show();
-      $('body').css("background-image", "url(./resources/images/background3.jpg)");
+      $('body').css("background-image", "url(./resources/images/header.jpg)");
   });
 
   $('.home').on('click',
