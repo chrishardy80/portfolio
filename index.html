@@ -7,12 +7,19 @@
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="./resources/javascript/main.js"></script>
   </head>
 
   <body>
+
+    <div class="sidenav">
+        <a href="https://www.linkedin.com/in/chris-hardy-0b60b5162" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+        <a href="https://github.com/chrishardy80" target="_blank"><i class="fa fa-github fa-lg"></i></a>
+        <a href="mailto:chris.j.hardy@talk21.com" target="_blank"><i class="fa fa-envelope-square fa-lg"></i></a>
+        <a href="https://www.facebook.com/chris.hardy.3958" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+    </div>
 
     <div id="content">
 
@@ -21,8 +28,8 @@
       <header>
 
         <div class="logo">
-          <div class="imagecontainer">
-            <img src="./resources/images/imageedit_1_3514921419.png"/>
+          <div>
+            <p class="initials">C<span>H</span></p>
           </div>
           <div class="textcontainer">
             <span class="name">Chris Hardy</span>
@@ -60,8 +67,18 @@
 
         <div id="aboutme">
           <h1>Professional Web Development</h1>
-          <p>I am a web developer from Halifax, West Yorkshire with a passion for making beautiful web-sites functional.
-            If you are a business looking for an improved web presence or an employer looking to hire, please get in touch.</p>
+          <p>I am a web developer from Halifax, West Yorkshire with a passion for making beautiful web-sites.
+            </p>
+          <div class="buttons">
+          <div class="button one">
+            <p>View my previous work</p>
+            <span>&#8227;</span>
+          </div>
+          <div class="button two">
+            <p>Get in touch</p>
+            <span>&#8227;</span>
+          </div>
+        </div>
         </div>
 
         <div id="projectspage">
@@ -77,6 +94,7 @@
               <h2>Jammming</h2>
               <p>A front end app allowing the user to create
               palylists and export them to Spotify. Built using React.js</p>
+            </div>
 
               <div class="buttons">
 
@@ -97,7 +115,7 @@
 
             </div>
 
-          </div>
+
 
         </div>
 
@@ -111,7 +129,7 @@
 
             <h2>Ravenous</h2>
             <p>A search engine that accesses the Yelp API, built using React.js</p>
-
+          </div>
             <div class="buttons">
 
               <a href="http://purple-dalmatian.surge.sh" target="_blank">
@@ -131,7 +149,7 @@
 
             </div>
 
-          </div>
+
 
         </div>
 
@@ -145,7 +163,7 @@
 
             <h2>Calculator</h2>
             <p>A calculator built with Javascript</p>
-
+          </div>
             <div class="buttons">
 
               <a href="https://chrishardy80.github.io/calculator" target="_blank">
@@ -165,7 +183,7 @@
 
             </div>
 
-          </div>
+
 
         </div>
 
@@ -178,7 +196,7 @@
           <div class="textcontainer">
             <h2>Sudoku</h2>
             <p>A sudoku puzzle generator that creates a new, random, complete puzzle board each time it is run. Created with javascript.</p>
-
+          </div>
             <a href="https://github.com/chrishardy80/sudoku" target="_blank">
               <div class="button">
                 <span class="github">View on Github</span>
@@ -188,7 +206,7 @@
               </div>
             </a>
 
-          </div>
+
 
         </div>
 
@@ -202,7 +220,7 @@
             <h2>Minesweeper</h2>
             <p>A version of the Minesweeper game playable in the terminal.
                Created with Javascript.</p>
-
+          </div>
             <a href="https://github.com/chrishardy80/minesweeper" target="_blank">
               <div class="button">
                 <span class="github">View on Github</span>
@@ -211,21 +229,21 @@
                 </div>
               </div>
             </a>
-            </div>
+
 
           </div>
 
         </div>
 
         <div id="contactpage">
-          <div class="container">
+          <div class="formcontainer">
               <h1>Get in touch</h1>
               <form action="https://formspree.io/chris.j.hardy@talk21.com"
                     method="POST">
                   <div class="contactdetails">
                     <input type="text" name="name" placeholder="name" class="inputForm">
                     <input type="email" name="_replyto" placeholder="email" class="inputForm">
-                    <input type="number" name="phone" placeholder="phone" class="inputForm">
+                    <input type="text" name="phone" placeholder="phone" class="inputForm">
                   </div>
                   <div class="message">
                     <textarea type="text" name="message" placeholder="message">
@@ -235,11 +253,7 @@
                     <input type="submit" value="Send" class="button">
                   </div>
               </form>
-              <div class="contacticons">
-                <i class="fa fa-linkedin fa-lg"></i>
-                <i class="fa fa-github fa-lg"></i>
-                <i class="fa fa-envelope-square fa-lg"></i>
-              </div>
+
           </div>
         </div>
         </div>
