@@ -22,7 +22,7 @@
     </div>
 
     <div id="content">
-
+    <div class="background">
       <!-- header content -->
 
       <header>
@@ -38,30 +38,33 @@
         </div>
 
         <nav>
+          <a class="contactlink" href="#contactpage">
+          <div class="navigation contact">
+            <span>CONTACT</span>
+            <div class="redlight">
+            </div>
+          </div>
+        </a>
+
+
+          <a class="projectlink" href="#projectspage">
+          <div class="navigation projects">
+            <span>PROJECTS</span>
+            <div class="redlight">
+            </div>
+          </div>
+          </a>
 
           <div class="navigation home">
             <span>HOME</span>
             <div class="redlight">
             </div>
           </div>
-
-          <div class="navigation projects">
-            <span>PROJECTS</span>
-            <div class="redlight">
-            </div>
-          </div>
-
-          <div class="navigation contact">
-            <span>CONTACT</span>
-            <div class="redlight">
-            </div>
-          </div>
-
-        </nav>
+      </nav>
 
       </header>
 
-      <div class="maincontent">
+
 
         <!-- Home page content -->
 
@@ -70,31 +73,28 @@
           <p>I am a web developer from Halifax, West Yorkshire with a passion for making beautiful web-sites.
             </p>
           <div class="buttons">
+              <a href="#projectspage">
           <div class="button one">
             <p>View my previous work</p>
             <span>&#8227;</span>
           </div>
+        </a>
+        <a href="#contactpage">
           <div class="button two">
             <p>Get in touch</p>
             <span>&#8227;</span>
           </div>
+        </a>
         </div>
         </div>
-
+      </div>
         <div id="projectspage">
 
           <div class="element jammming">
 
             <div class="imagecontainer">
-              <img src="./resources/images/jammming.png"/>
-            </div>
 
-            <div class="textcontainer">
-
-              <h2>Jammming</h2>
-              <p>A front end app allowing the user to create
-              palylists and export them to Spotify. Built using React.js</p>
-            </div>
+              <img class="main" src="./resources/images/jammming.png"/>
 
               <div class="buttons">
 
@@ -112,8 +112,19 @@
                     </div>
                   </div>
                 </a>
-
             </div>
+
+          </div>
+            <div class="textcontainer">
+
+              <h2>Jammming</h2>
+              <p>A front end app allowing the user to create
+              palylists and export them to Spotify. Built using React.js</p>
+            </div>
+
+
+
+
 
 
 
@@ -121,15 +132,9 @@
 
         <div class="element ravenous">
 
+
           <div class="imagecontainer">
             <img src="./resources/images/ravenous.png"/>
-          </div>
-
-          <div class="textcontainer">
-
-            <h2>Ravenous</h2>
-            <p>A search engine that accesses the Yelp API, built using React.js</p>
-          </div>
             <div class="buttons">
 
               <a href="http://purple-dalmatian.surge.sh" target="_blank">
@@ -148,6 +153,16 @@
               </a>
 
             </div>
+          </div>
+
+          <div class="textcontainer">
+
+            <h2>Ravenous</h2>
+            <p>A search engine that accesses the Yelp API, built using React.js</p>
+          </div>
+
+
+
 
 
 
@@ -156,14 +171,7 @@
         <div class="element calculator">
 
           <div class="imagecontainer">
-            <img src="./resources/images/calculator.png"/>
-          </div>
-
-          <div class="textcontainer">
-
-            <h2>Calculator</h2>
-            <p>A calculator built with Javascript</p>
-          </div>
+            <img src="./resources/images/calculator.jpg"/>
             <div class="buttons">
 
               <a href="https://chrishardy80.github.io/calculator" target="_blank">
@@ -182,6 +190,15 @@
               </a>
 
             </div>
+          </div>
+
+          <div class="textcontainer">
+
+            <h2>Calculator</h2>
+            <p>A calculator built with Javascript</p>
+          </div>
+
+
 
 
 
@@ -189,14 +206,10 @@
 
         <div class="element sudoku">
 
+
           <div class="imagecontainer">
             <img src="./resources/images/sudoku.png"/>
-          </div>
-
-          <div class="textcontainer">
-            <h2>Sudoku</h2>
-            <p>A sudoku puzzle generator that creates a new, random, complete puzzle board each time it is run. Created with javascript.</p>
-          </div>
+            <div class="buttons">
             <a href="https://github.com/chrishardy80/sudoku" target="_blank">
               <div class="button">
                 <span class="github">View on Github</span>
@@ -205,6 +218,15 @@
                 </div>
               </div>
             </a>
+          </div>
+          </div>
+
+          <div class="textcontainer">
+            <h2>Sudoku</h2>
+            <p>A sudoku puzzle generator that creates a new, random, complete puzzle board each time it is run. Created with javascript.</p>
+          </div>
+
+
 
 
 
@@ -214,6 +236,16 @@
 
           <div class="imagecontainer">
             <img src="./resources/images/minesweeper.png"/>
+            <div class="buttons">
+              <a href="https://github.com/chrishardy80/minesweeper" target="_blank">
+                <div class="button">
+                  <span class="github">View on Github</span>
+                  <div class="icon">
+                    <i class="fa fa-github"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
 
           <div class="textcontainer">
@@ -221,14 +253,8 @@
             <p>A version of the Minesweeper game playable in the terminal.
                Created with Javascript.</p>
           </div>
-            <a href="https://github.com/chrishardy80/minesweeper" target="_blank">
-              <div class="button">
-                <span class="github">View on Github</span>
-                <div class="icon">
-                  <i class="fa fa-github"></i>
-                </div>
-              </div>
-            </a>
+
+
 
 
           </div>
@@ -256,7 +282,7 @@
 
           </div>
         </div>
-        </div>
+
       </div>
 
 
