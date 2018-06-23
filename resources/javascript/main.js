@@ -5,11 +5,13 @@ function main() {
       $('.mobilenav').animate({'right': '0'});
   });
 
-  $('body').click(function(e) {
+  $('body').on('click touchstart',function(e) {
     if( $(e.target).closest(".mobile").length > 0 ) {
       return false;
   }
-      $('.mobilenav').animate({'right': '-150'});
+      $('.mobilenav').animate({'right': '-190'});
   });
+
+
 }
 $(document).ready(main);
